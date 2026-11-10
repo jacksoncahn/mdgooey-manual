@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/gh-pages-browser-router/dev/gooey.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>md-gooey</title>
+
+    
+     <script type="text/javascript">
+      // solution from https://github.com/rafgraph/spa-github-pages
+      (function(l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function(s) {
+              return s.replace(/~and~/g, '&');
+            })
+            .join('?');
+
+          var basePath = '/gh-pages-browser-router/dev';
+
+          window.history.replaceState(
+            null,
+            null,
+            basePath + decoded + l.hash
+          );
+        }
+      }(window.location));
+    </script>
+    <script type="module" crossorigin src="/gh-pages-browser-router/dev/assets/index-Btc0oRvL.js"></script>
+    <link rel="stylesheet" crossorigin href="/gh-pages-browser-router/dev/assets/index-0q1WYysv.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
